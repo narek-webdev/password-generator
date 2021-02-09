@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="main__flex">
+            <div class="main__form">
+                <h2 class="main__title">Generate</h2>
+
+                <div class="main__item">
+                    <label class="main__label">
+                        <select class="main__input" id="length_select"></select>
+                        Password Length:
+                    </label>
+                </div>
+
+                <div class="main__item">
+                    <label class="main__label">
+                        <input type="checkbox" class="main__checkbox" checked id="symbols">
+                        Include Symbols: ( e.g. @#$% )
+                    </label>
+                </div>
+
+                <div class="main__item">
+                    <label class="main__label">
+                        <input type="checkbox" class="main__checkbox" id="numbers">
+                        Include Numbers: ( e.g. 123456 )
+                    </label>
+                </div>
+
+                <div class="main__item">
+                    <label class="main__label">
+                        <input type="checkbox" class="main__checkbox" id="lowercase_characters">
+                        Include Lowercase Characters: ( e.g. abcdefgh )
+                    </label>
+                </div>
+
+                <div class="main__item">
+                    <label class="main__label">
+                        <input type="checkbox" class="main__checkbox" id="uppercase_characters">
+                        Include Uppercase Characters: ( e.g. ABCDEFGH )
+                    </label>
+                </div>
+
+                <div class="main__item">
+                    <label class="main__label">
+                        <input type="checkbox" class="main__checkbox" id="select_auto">
+                        ( select the password automatically )
+                    </label>
+                </div>
+
+                <div class="main__item">
+                    <button id="generate" class="main__button">Generate</button>
+                </div>
+
+                <div class="main__item main__item--flex">
+                    <input id="output" class="main__input" />
+                    <button id="copyPassword" class="main__button main__button--copy">Copy</button>
+                </div>
+            </div>
+
+            <div class="main__image-container">
+                <img class="main__image" src="./images/key.png" >
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
